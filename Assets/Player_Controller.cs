@@ -9,6 +9,7 @@ public class Player_Controller : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public GameObject trigger;
+    public GameObject ball;
 
     private Rigidbody rb;
     private bool isGrounded = true;

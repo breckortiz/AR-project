@@ -5,6 +5,8 @@ using UnityEngine;
 public class DeathFloor : MonoBehaviour
 {
     public GameObject spawnpoint;
+    public GameObject ball;
+    public GameObject Player;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class DeathFloor : MonoBehaviour
         {
             // Teleport the player to the spawn point's position
             other.transform.position = spawnpoint.transform.position;
+            ball.transform.position = spawnpoint.transform.position;
+            Player.transform.position = spawnpoint.transform.position;
         }
     }
 }
